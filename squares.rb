@@ -28,7 +28,3 @@ class Squares
 
 
 end
-
-# sq = Squares.new(5)  # 5, 4, 3, 2, 1 = 15 
-# p sq.square_of_sums
-# p sq.sum_of_squares
