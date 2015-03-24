@@ -1,4 +1,4 @@
-require 'pry'
+# require 'pry'
 
 class Squares
 
@@ -7,17 +7,23 @@ class Squares
   end
   
   def sum_of_squares
-    result = (1..@number).reduce(0) do |sum, x|
+    sum_sq = (1..@number).reduce(0) do |sum, x|
       sum + x**2 
     end
-    result
+    sum_sq
   end
 
   def square_of_sums
-    result = (1..@number).reduce do |sum, x| 
+    sq_sum = (1..@number).reduce do |sum, x| 
       sum + x
     end
-    result**2 
+    sq_sum**2 
+  end
+
+  def difference
+    sum_sq = sum_of_squares
+    sq_sum = square_of_sums
+    result = sq_sum - sum_sq
   end
 
 

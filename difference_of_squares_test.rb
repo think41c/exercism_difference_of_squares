@@ -12,22 +12,18 @@ class SquaresTest < Minitest::Test
   end
 
   def test_difference_of_sums_to_5
-    skip
     assert_equal 170, Squares.new(5).difference
   end
 
   def test_square_of_sums_to_10
-    skip
     assert_equal 3025, Squares.new(10).square_of_sums
   end
 
   def test_sum_of_squares_to_10
-    skip
     assert_equal 385, Squares.new(10).sum_of_squares
   end
 
   def test_difference_of_sums_to_10
-    skip
     assert_equal 2640, Squares.new(10).difference
   end
 
