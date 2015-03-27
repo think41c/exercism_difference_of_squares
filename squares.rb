@@ -1,16 +1,16 @@
 class Squares
-  attr_reader :number
+  attr_reader :numbers
 
-  def initialize(number)
-    @number = (1..number)
+  def initialize(numbers)
+    @numbers = (1..numbers)
   end
   
   def sum_of_squares
-    number.reduce(0) { |x, y| x + y**2}
+    numbers.reduce(0) { |x, y| x + y**2}
   end
 
   def square_of_sums
-    number.reduce(0, :+)**2
+    numbers.reduce(0, :+)**2
   end
 
   def difference
