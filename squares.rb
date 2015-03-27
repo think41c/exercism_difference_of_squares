@@ -22,5 +22,4 @@ class Squares
   def difference
     result = square_of_sums - sum_of_squares
   end
-  # numbers.reduce(0) { |x, y| x + y**2 }
 end
