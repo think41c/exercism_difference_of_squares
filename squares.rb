@@ -1,25 +1,19 @@
-
 class Squares
+  attr_reader :number
 
   def initialize(number)
     @number = (1..number)
   end
   
   def sum_of_squares
-    sum_sq = @number.reduce(0) do |sum, x|
-      sum + x**2 
-    end
-    sum_sq
+    number.reduce(0) { |x, y| x + y**2}
   end
 
   def square_of_sums
-    sq_sum = @number.reduce do |sum, x| 
-      sum + x
-    end
-    sq_sum**2 
+    number.reduce(0, :+)**2
   end
 
   def difference
-    result = square_of_sums - sum_of_squares
+    square_of_sums - sum_of_squares
   end
 end
